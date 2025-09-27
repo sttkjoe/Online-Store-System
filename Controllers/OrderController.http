@@ -1,0 +1,27 @@
+GET http://localhost:5274/api/orders
+Cookie: .AspNetCore.Identity.Application=CfDJ8KxcMmpymXBBjG7yT-n0J0c1uPcottMCzh2mdhKPkXC-R4TgglDUn2j7gNoQAFQaku82gzrITLa4BJMmj9kReVOoFa2WBXQVROfjXDfNBGP30vfps5y41QVsGwaZTsnJsdwDl8ga0W-4xYpweJOkkO7_RJMl9XdowxoM2NdM5mT4Lz0rS7rpSGkMH9Uzw7iPiRwMF6_q3i8-xfO3ATR8ad1oxmKaAE8rWPm-AoPwo_MILth92UVS5Z94YxyJtd0EIf4ZiT3SW_ik8_Z9JM3VF_-DGJmv7rhzdleEny1g9rBK_HbHTwdlJpf8YodGK56zv4grdu71MH1tjvdG7eM3FD5xwBCIXmzx6BuYSMrHrukMN1Deszqj53Onc_jeZ4XoJCzCahWJynA4VvlRLZ0CdIKuk-8VaYJmbiI_UaXyjR0vxrPGMXRnlniYbQfSTrHXhblaHI32PzLYf-kZKnqpj2yQGKO9p3fd4F9XWqEAUwKZBRwH8UNeCz4ZguDQZNndVdKhT5cSce3-eSL78DTnd_rkobOJzPHANKZqvq9paLrrF-K1GpmNWTVMrxQmsl39syYoMzjYPb8-_G0omSgdKWEm9UZw-7J_HDmsn6nxxLRu9vmeUG_V7RNClu83HQsCYNN3CM404if5bV4nhCrY8LhwbzPIjVrX-aKEsVWO1LPGteoXnvD1t0-2mQNCbuQweOcbQlkVMhybY16lsO5zi6JvzN037M9BJ-oco5jxlO0Yi1zek3XdGriM4SkZKza1fbYiQlXqLaJ7Sku3WnTeZsdfybECnDwX47-mZzWGuTVEymLcT7Aa6zuVqDVqDh87A7qZ6z-cuyKIGA2fukIqnmU; path=/; samesite=lax; httponly
+
+###
+GET http://localhost:5274/api/orders/2
+Cookie: .AspNetCore.Identity.Application=CfDJ8KxcMmpymXBBjG7yT-n0J0c1uPcottMCzh2mdhKPkXC-R4TgglDUn2j7gNoQAFQaku82gzrITLa4BJMmj9kReVOoFa2WBXQVROfjXDfNBGP30vfps5y41QVsGwaZTsnJsdwDl8ga0W-4xYpweJOkkO7_RJMl9XdowxoM2NdM5mT4Lz0rS7rpSGkMH9Uzw7iPiRwMF6_q3i8-xfO3ATR8ad1oxmKaAE8rWPm-AoPwo_MILth92UVS5Z94YxyJtd0EIf4ZiT3SW_ik8_Z9JM3VF_-DGJmv7rhzdleEny1g9rBK_HbHTwdlJpf8YodGK56zv4grdu71MH1tjvdG7eM3FD5xwBCIXmzx6BuYSMrHrukMN1Deszqj53Onc_jeZ4XoJCzCahWJynA4VvlRLZ0CdIKuk-8VaYJmbiI_UaXyjR0vxrPGMXRnlniYbQfSTrHXhblaHI32PzLYf-kZKnqpj2yQGKO9p3fd4F9XWqEAUwKZBRwH8UNeCz4ZguDQZNndVdKhT5cSce3-eSL78DTnd_rkobOJzPHANKZqvq9paLrrF-K1GpmNWTVMrxQmsl39syYoMzjYPb8-_G0omSgdKWEm9UZw-7J_HDmsn6nxxLRu9vmeUG_V7RNClu83HQsCYNN3CM404if5bV4nhCrY8LhwbzPIjVrX-aKEsVWO1LPGteoXnvD1t0-2mQNCbuQweOcbQlkVMhybY16lsO5zi6JvzN037M9BJ-oco5jxlO0Yi1zek3XdGriM4SkZKza1fbYiQlXqLaJ7Sku3WnTeZsdfybECnDwX47-mZzWGuTVEymLcT7Aa6zuVqDVqDh87A7qZ6z-cuyKIGA2fukIqnmU; path=/; samesite=lax; httponly
+
+###
+POST http://localhost:5274/api/orders
+Content-Type: application/json
+
+{
+    "orderId": 1,
+    "customerName": "John Smith",
+    "orderDate": "2025-02-10T00:00:00",
+    "items": [
+        {
+            "itemId": 6,
+            "Name": "Nails",
+            "quantity": 12,
+            "location": "Warehouse C"
+        }
+    ]
+}
+
+###
+DELETE http://localhost:5274/api/orders/1
